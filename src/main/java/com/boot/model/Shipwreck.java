@@ -1,11 +1,6 @@
 package com.boot.model;
 
-import com.sun.javafx.beans.IDProperty;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Shipwreck {
@@ -14,6 +9,7 @@ public class Shipwreck {
     Long id;
 	String name;
 	String description;
+	@Column(name = "xcondition")
 	String condition;
 	Integer depth;
 	Double latitude;
