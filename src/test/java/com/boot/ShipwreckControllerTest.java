@@ -35,6 +35,6 @@ public class ShipwreckControllerTest {
 
         Shipwreck wreck = sc.get(1L);
         verify(shipwreckRepository).findOne(1L);
-        assertThat(1L, is(equalTo(wreck.getId().longValue())));
+        assertThat(wreck.getId(), is(equalTo(1l)));
     }
 }
